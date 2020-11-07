@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="name">Name</string>
+    <string name="height">Height(m)</string>
+    <string name="weight">Weight(kg)</string>
+    <string name="gender">Gender</string>
+    <string name="calculate_bmi">BMI</string>
+    <string name="save">Save</string>
+    <string name="timer">Timer</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+        tools:context=".MainActivity">
+<TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            />
+        <EditText
+            android:id="@+id/nameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+style="@style/width150"          />
+</TableRow>
+    <TableRow>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            />
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            style="@style/width150"
+            />
+
+</TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            />
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nameLabel"
+            android:inputType="numberDecimal"
+            style="@style/width150"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            />
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/gender"
+            style="@style/width150"
+            />
+    </TableRow>
+    <TableRow android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btnBmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="calculateBMI"
+            android:layout_marginRight="10dp"
+            android:text="@string/calculate_bmi" />
+        <TextView
+            android:id="@+id/bmilabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/width150"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:width="100dp"
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="50dp"
+            android:onClick="saveData"
+            android:text="@string/save"
+           style="@style/saveButtonsColor" />
+        <!--hidden edit text to store the bmi to store in shared preference-->
+        <EditText
+            android:id="@+id/bmiEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+           android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/btnTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Timer"
+            android:text="@string/timer"
+            style="@style/timerButtonsColor"
+
+            />
+</TableRow>
+
+</TableLayout>
+
+
+
